@@ -1,0 +1,597 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Maven Pro', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Libre Franklin', sans-serif;
+}
+a, a:hover{
+	text-decoration: none;
+}
+.header-section{
+	width: 1005;
+	background: url("../images/banner.png") center top no-repeat;
+	background-size: cover;
+
+}
+.main-menu{
+	width: 100%;
+}
+.main-menu .bg-light{
+	background: transparent !important;
+}
+.main-menu .navbar-brand img{
+    max-width: 85px;
+}
+.main-menu .navbar-light .navbar-nav .active>.nav-link{
+	color: #511de5;
+    background: url("../images/line.png") center bottom no-repeat;
+}
+.main-menu .navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px 15px;
+    /*transition: 1s;*/
+}
+.main-menu .navbar-light .navbar-nav .nav-link:hover{
+	color: #511de5;
+    background: url("../images/line.png") bottom left no-repeat;
+}
+.main-menu .navbar-light .btn-link{
+	color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px 15px;
+}
+.main-menu .navbar-light .btn-link:hover{
+	text-decoration: none;
+	color: #511de5;
+}
+.main-menu .navbar-light .btn-info {
+    padding: 9px 45px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #511de5, #1877f7);
+    text-transform: capitalize;
+    transition: 1s;
+}
+.main-menu .navbar-light .btn-info:hover, .main-menu .navbar-light .btn-info:focus{
+	background: linear-gradient(45deg, #1877f7, #511de5);
+}
+/*banner-section start*/
+.banner{
+	width: 100%;
+	padding: 230px  0px;
+}
+.banner .inner-banner{
+	width: 100%;
+	text-align: right;
+}
+.banner .inner-banner h1{
+	font-size: 45px;
+	font-weight: 800;
+	line-height: 60px;
+	text-align: right;	
+}
+.banner .inner-banner h1 span{
+	color: #511de5;
+}
+.banner .btn-primary{
+	padding: 9px 35px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #061113;
+    border-radius: 30px;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
+    text-transform: uppercase;
+    transition: 1s;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+.banner .btn-primary:hover, .banner .btn-primary:focus{
+	border: 1px solid #511de5;
+    background: transparent;
+	color: #511de5;
+}
+
+/*feature part start*/
+.feturea{
+	width: 100%;
+	padding: 30px 0px;
+	background: url("../images/h.png") center top no-repeat;
+	background-size: cover;
+}
+.inner-image{
+	width: 100%;
+	position: relative;
+}
+.inner-image img{
+	position: absolute;
+    top: -90px;
+    width: 295px;
+}
+.feturea h2{
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+
+/*media  banner responsive code start*/
+/*****************************************************************************/
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /***********************************/
+    .main-menu .navbar-light .navbar-nav .active>.nav-link {
+	    color: #511de5;
+	    background: url(../images/line.png) left bottom no-repeat;
+	    background-size: auto;
+	}
+	.main-menu .navbar-light .btn-link {
+	    color: #000;
+	    font-size: 14px;
+	    font-weight: 900;
+	    margin: 0px 5px;
+	    display: block;
+	    text-align: left;
+	}
+	.banner {
+    	width: 100%;
+    	padding: 30px 0px;
+	}
+	.banner .inner-banner h1 {
+		font-size: 32px;
+		line-height: 1.5;
+	}
+	.banner .btn-primary{
+		padding: 11px 15px;
+    	font-size: 15px;
+	}
+/**************************************/
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+ /***********************************/
+    .main-menu .navbar-light .navbar-nav .active>.nav-link {
+	    color: #511de5;
+	    background: url(../images/line.png) left bottom no-repeat;
+	    background-size: auto;
+	}
+	.main-menu .navbar-light .btn-link {
+	    color: #000;
+	    font-size: 14px;
+	    font-weight: 900;
+	    margin: 0px 5px;
+	    display: block;
+	    text-align: left;
+	}
+	.banner {
+    	width: 100%;
+    	padding: 30px 0px;
+	}
+	.banner .inner-banner h1 {
+		font-size: 43px;
+		line-height: 50px;
+	}
+	.banner .btn-primary{
+		padding: 12px 18px;
+    	font-size: 16px;
+	}
+/**************************************/
+  
+}
+
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+/***********************************/
+    .main-menu .navbar-light .navbar-nav .active>.nav-link {
+	    color: #511de5;
+	    background: url(../images/line.png) left bottom no-repeat;
+	    background-size: auto;
+	}
+	.main-menu .navbar-light .btn-link {
+	    color: #000;
+	    font-size: 14px;
+	    font-weight: 900;
+	    margin: 0px 5px;
+	    display: block;
+	    text-align: left;
+	}
+	.banner {
+    	width: 100%;
+    	padding: 35px 0px;
+	}
+	.banner .inner-banner h1 {
+		font-size: 40px;
+		line-height: 1.5;
+	}
+	.banner .btn-primary{
+		padding: 13px 23px;
+    	font-size: 16px;
+	}
+/**************************************/
+  
+}
+
+/*media  banner responsive code end*/
+/*****************************************************************************/
+
+.feature1{
+	width: 100%;
+	padding: 80px 0px;
+	background: url("../images/bg.png") bottom right no-repeat;
+	background-size: cover;
+}
+.inner-feature1 {
+    width: 100%;
+    padding: 60px 0px;
+}
+.inner-feature1 h2 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 900;
+}
+.inner-feature1 p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.inner-feature1 .big-text{
+	width: 100%;
+	margin: 80px 0px;
+
+}
+.inner-feature1 .big-text .parcent {
+    font-size: 85px;
+    font-weight: 900;
+    color: linear-gradient(45deg, black, transparent);
+    margin-right: 30px;
+    background: -webkit-linear-gradient(4deg, #511de5, #0a8efc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.inner-feature1 .big-text .pi {
+    font-size: 16px;
+    font-weight: 700;
+}
+.image-box{
+	width: 100%;
+}
+.image-box .client-images {
+    width: 100%;
+    margin: 75px 0px 0px;
+}
+.quote{
+	width: 100%;
+	padding: 200px 30px;
+	background: url("../images/bc.png")center top no-repeat;
+	background-size: cover;
+}
+.inner-quote {
+    width: 100%;
+    padding: 125px 40px;
+    background: url(../images/qu.png)center left no-repeat;
+    background-size: contain;
+}
+.inner-quote .inner-quote-text {
+    width: 100%;
+    margin-left: 85px;
+}
+.inner-quote .inner-quote-text p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.inner-quote .inner-quote-text h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.inner-quote1{
+	width: 100%;
+	margin: 40px 0px;
+}
+.inner-quote1 h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 50px;
+    margin: 50px 0px 0px 30px;
+}
+.inner-quote1 .btn-primary {
+    padding: 9px 23px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #061113;
+    border-radius: 30px;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
+    text-transform: uppercase;
+    transition: 1s;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.inner-quote1 .btn-primary:hover, .inner-quote1 .btn-primary:focus{
+	border: 1px solid #511de5;
+    background: transparent;
+	color: #511de5;
+}
+.effciency{
+	width: 100%;
+	
+}
+.inner-effciency{
+	width: 100%;
+	padding: 40px 0px;
+}
+.inner-effciency h1{
+	font-size: 38px;
+    font-weight: 800;
+    line-height: 50px;
+}
+.inner-effciency p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin: 30px 0px;
+}
+.inner-effciency h4 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 25px 0px;
+}
+.inner-effciency .btn-primary{
+	padding: 9px 23px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #f2f2f2;
+    background: linear-gradient(45deg, #511de5, #1877f7);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    transition: 1s;
+}
+.inner-effciency .btn-primary:hover, .inner-effciency .btn-primary:focus{
+	background: linear-gradient(45deg, #1877f7, #511de5);
+}
+.design{
+	width: 100%;
+	padding: 80px 0px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.design .design-text{
+	width: 100%;
+	text-align: center;
+}
+.design .design-text h2{
+	font-size: 42px;
+    font-weight: 900;
+    line-height: 52px;
+    margin: 50px 0px 0px 30px;
+}
+.design .design-text p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin: 30px 0px;
+    line-height: 26px;
+}
+.design-box{
+	width: 100%;
+	padding: 40px 30px;
+	text-align: center;
+}
+.design-box img{
+
+}
+.design-box h4{
+	font-size: 22px;
+    font-weight: 800;
+    color: #000;
+    margin: 10px 0px;
+}
+.design-box p{
+	font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    margin: 10px 0px;
+    line-height: 24px;
+}
+.design-box .middle-border{
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+}
+.ins-qoutes{
+	width: 100%;
+	padding: 80px 0px;
+}
+.ins-qoutes .text-qoutes{
+	text-align: center;
+}
+.ins-qoutes .text-qoutes h2{
+	font-size: 65px;
+    font-weight: 900;
+    margin-bottom: 110px;
+}
+.ins-qoutes .box-text {
+    width: 100%;
+    padding: 35px 5px;
+    background: url(../images/k1.png) center top no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #a0a0a0; 
+}
+.ins-qoutes .box-text .ins-text {
+    width: 100%;
+    padding: 70px 0px 0px 15px;
+    text-align: center;
+}
+.ins-qoutes .box-text .ins-text h5 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #a0a0a0;
+    margin-bottom: 35px;
+}
+.box-info{
+	width: 100%;
+	padding: 30px 0px;
+}
+.box-info .bottom-box{
+	text-align: center;
+}
+.box-info .bottom-box img{
+	width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.box-info .bottom-box h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #a0a0a0;
+    text-transform: uppercase;
+}
+.box-info .bottom-box p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #a0a0a0;
+}
+.ins-qoutes .client-box:hover{
+	opacity: 1;
+}
+.ins-qoutes .client-box:hover .ins-text h5{
+	background: -webkit-linear-gradient(4deg, #511de5, #0a8efc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.ins-qoutes .client-box:hover .bottom-box h5{
+	color: #000;
+}
+.ins-qoutes .client-box:hover .bottom-box p{
+	color: #666;
+}
+.footer-section {
+    width: 100%;
+    padding: 30px 220px;
+    background: url(../images/bge.png) center top no-repeat;
+    background-size: cover;
+}
+.footer-section .fcq{
+	width: 100%;
+	padding: 100px 30px;
+	text-align: center;
+	background: #fff;
+	background-size: cover;
+	box-shadow: 0px -1px 3px 2px #eee;
+}
+.fcq .fcq-text h2{
+	font-size: 62px;
+    font-weight: 900;
+    margin-bottom: 110px;	
+}
+.fcq .card {
+    background-clip: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #eee !important; 
+}
+.fcq .card .card-header {
+    padding: .75rem 0px;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: none;
+}
+.fcq .card .card-header .btn-link {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+.fcq .card .card-header .btn{
+	padding: 0px;
+	color: #000;
+}
+.fcq .card .card-header .btn-link:hover, .fcq .card .card-header .btn-link:focus{
+	color: #0000ff;
+}
+.fcq .card .card-header .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: .25rem 0rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+.bottom-footer{
+	width: 100%;
+	padding: 85px 0px;
+	margin-left: -15px;
+}
+.bottom-footer ul{
+	padding: 0px;
+	margin: 0px;
+}
+.bottom-footer li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+.bottom-footer a{
+	font-size: 17px;
+	font-weight: 600;
+	color: #fff;
+	margin-top: 50px;
+}
+.bottom-footer1{
+	width: 100%;
+	padding: 85px 0px;
+}
+.bottom-footer1 ul{
+	padding: 0px;
+	margin: 0px;
+}
+.bottom-footer1 li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 13px;
+}
+.bottom-footer1 a{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
